@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_marginHorizontal="32dp"
+    tools:context=".CreateAccountActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="20dp"
+        android:id="@+id/sign_up.png"
+        android:src="@drawable/sign_up"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up.png"
+        android:id="@+id/hello_text"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Witaj w MyNotes!"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Załóż swoje konto"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/form_layout"
+        android:layout_below="@id/hello_text"
+        android:layout_marginVertical="36dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_edit_text"
+            android:inputType="textEmailAddress"
+            android:hint="Adres Email"
+            android:textSize="16sp"
+            android:background="@drawable/rounder_corner"
+            android:padding="12dp"
+            android:layout_marginTop="8dp" >
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_edit_text"
+            android:inputType="textPassword"
+            android:hint="Hasło"
+            android:textSize="16sp"
+            android:background="@drawable/rounder_corner"
+            android:padding="12dp"
+            android:layout_marginTop="8dp" >
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirm_password_edit_text"
+            android:inputType="textPassword"
+            android:hint="Powtórz Hasło"
+            android:textSize="16sp"
+            android:background="@drawable/rounder_corner"
+            android:padding="12dp"
+            android:layout_marginTop="8dp" >
+        </EditText>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/create_acc_btn"
+            android:text="Utwórz Konto"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            />
+
+        <ProgressBar
+            android:layout_width="24dp"
+            android:layout_height="48dp"
+            android:id="@+id/progess_bar"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/form_layout"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Posiadasz już konto?"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zaloguj się"
+            android:textStyle="bold"
+            android:id="@+id/login_text_view_btn"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>
