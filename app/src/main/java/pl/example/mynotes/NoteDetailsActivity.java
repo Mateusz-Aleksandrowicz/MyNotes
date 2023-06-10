@@ -14,6 +14,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.Timestamp;
 import com.google.firebase.firestore.DocumentReference;
 
+import pl.example.mynotes.Utility;
+
 public class NoteDetailsActivity extends AppCompatActivity {
 
     EditText titleEditText,contentEditText;
@@ -43,7 +45,16 @@ public class NoteDetailsActivity extends AppCompatActivity {
             isEditMode = true;
         }
 
+        titleEditText.setText(title);
+        contentEditText.setText(content);
+        if(isEditMode){
+            pageTitleTextView.setText("Edytuj swoją notatke");
+            deleteNoteTextViewBtn.setVisibility(View.VISIBLE);
+        }
+
         saveNoteBtn.setOnClickListener( (v)-> saveNote());
+
+        deleteNoteTextViewBtn.setOnClickListener((v)-> deleteNoteFromFirebase() );
 
     }
 
@@ -51,7 +62,7 @@ public class NoteDetailsActivity extends AppCompatActivity {
         String noteTitle = titleEditText.getText().toString();
         String noteContent = contentEditText.getText().toString();
         if(noteTitle==null || noteTitle.isEmpty() ){
-            titleEditText.setError("Title is required");
+            titleEditText.setError("Tytuł jest wymagany");
             return;
         }
         Note note = new Note();
@@ -63,28 +74,49 @@ public class NoteDetailsActivity extends AppCompatActivity {
 
     }
 
-    void saveNoteToFirebase(Note note) {
+    void saveNoteToFirebase(Note note){
         DocumentReference documentReference;
-        if (isEditMode) {
+        if(isEditMode){
             //update the note
             documentReference = Utility.getCollectionReferenceForNotes().document(docId);
-        } else {
+        }else{
             //create new note
             documentReference = Utility.getCollectionReferenceForNotes().document();
         }
+
+
 
         documentReference.set(note).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if(task.isSuccessful()){
                     //note is added
-                    Utility.showToast(NoteDetailsActivity.this,"Note added successfully");
+                    Utility.showToast(NoteDetailsActivity.this,"Notatka dodana pomyślnie!");
                     finish();
                 }else{
-                    Utility.showToast(NoteDetailsActivity.this,"Failed while adding note");
+                    Utility.showToast(NoteDetailsActivity.this,"Błąd przy dodawaniu notatki!");
                 }
             }
         });
 
     }
+
+    void deleteNoteFromFirebase(){
+        DocumentReference documentReference;
+        documentReference = Utility.getCollectionReferenceForNotes().document(docId);
+        documentReference.delete().addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if(task.isSuccessful()){
+                    //note is deleted
+                    Utility.showToast(NoteDetailsActivity.this,"Notatka usunięta pomyślnie!");
+                    finish();
+                }else{
+                    Utility.showToast(NoteDetailsActivity.this,"Błąd przy usuwaniu notatki!");
+                }
+            }
+        });
+    }
+
+
 }
