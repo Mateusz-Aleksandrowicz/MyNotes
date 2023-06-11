@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/my_primary"
+    >
+
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:textColor="@android:color/white"
+        android:text="MyNotes"
+        />
+
+    <TextView
+        android:id="@+id/versionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:layout_below="@id/appName"
+        android:text="Wersja: 1.0.0" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/versionTextView"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"
+        android:text="Jak działa? I czym jest MyNotes?" />
+
+<!--  Tutaj dodajesz kolejne "text view'sy" z opisem aplikacji w necie napewno znajdziesz jak to ladnie
+  wystylowac zeby to jakos wygladalo :D
+     Ewentualnie mozesz dodac tylko textView i dac mu id i w klasie AboutUs
+     mozesz dodac odwolanie i tam dopiero dodac tekst poczytaj na necie o tym bo tego duzo jest
+ -->
+
+</RelativeLayout>

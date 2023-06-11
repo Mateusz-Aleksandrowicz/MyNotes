@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     void showMenu(){
         PopupMenu popupMenu  = new PopupMenu(MainActivity.this,menuBtn);
         popupMenu.getMenu().add("Wyloguj się");
+        popupMenu.getMenu().add("O nas");
         popupMenu.show();
         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
@@ -53,6 +54,10 @@ public class MainActivity extends AppCompatActivity {
                     FirebaseAuth.getInstance().signOut();
                     startActivity(new Intent(MainActivity.this,LoginActivity.class));
                     finish();
+                    return true;
+                }
+                if (menuItem.getTitle() == "O nas"){
+                    startActivity(new Intent(MainActivity.this, AboutUs.class));
                     return true;
                 }
                 return false;
