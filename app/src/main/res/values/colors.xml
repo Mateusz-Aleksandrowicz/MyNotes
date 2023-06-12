@@ -5,4 +5,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+<!--Light Mode-->
+    <color name="background" parent="Theme.AppCompat.DayNight">#AB24D3FE</color>
+    <color name="text" parent="Theme.AppCompat.DayNight">#FFFFFFFF</color>
+    <color name="textSecondary" parent="Theme.AppCompat.DayNight">#99272727</color>
+    <color name="button" parent="Theme.AppCompat.DayNight">#AB24D3FE</color>
+    <color name="text2" parent="Theme.AppCompat.DayNight">#FFFFFFFF</color>
+    <color name="addBtn" parent="Theme.AppCompat.DayNight">#272727</color>
+    <color name="textNote" parent="Theme.AppCompat.DayNight">#99272727</color>
 </resources>

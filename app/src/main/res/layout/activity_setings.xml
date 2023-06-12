@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Setings">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ogólne"
+        android:padding="16dp"
+        android:id="@+id/ogolne"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"
+        />
+    <Switch
+        android:layout_width="315dp"
+        android:layout_height="37dp"
+        android:layout_below="@+id/ogolne"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="14dp"
+        android:textStyle="bold"
+        android:textColor="@color/textSecondary"
+        android:textColorHint="@color/textSecondary"
+        android:backgroundTint="@color/textSecondary"
+        android:textSize="16dp"
+        android:id="@+id/switcher"
+        android:drawableLeft="@drawable/baseline_dark_mode_24"
+        android:gravity="center"
+        android:text="Dark Mode" />
+
+</RelativeLayout>

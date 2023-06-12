@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Witaj w MyNotes!"
-            android:textColor="@color/black"
+            android:textColor="@color/textSecondary"
             android:textSize="26sp"
             android:textStyle="bold"
             android:gravity="center" />
@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Załóż swoje konto"
-            android:textColor="@color/black"
+            android:textColor="@color/textSecondary"
             android:textSize="30sp"
             android:textStyle="bold"
             android:gravity="center"
@@ -98,6 +98,8 @@
             android:text="Utwórz Konto"
             android:textSize="14sp"
             android:layout_marginTop="8dp"
+            android:textColor="@color/text2"
+            android:backgroundTint="@color/button"
             />
 
         <ProgressBar
@@ -106,6 +108,7 @@
             android:id="@+id/progess_bar"
             android:layout_gravity="center"
             android:layout_marginTop="8dp"
+            android:indeterminateTint="@color/background"
             android:visibility="gone"
             />
     </LinearLayout>

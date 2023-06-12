@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setTitle("MyNotes");
 
         addNoteBtn = findViewById(R.id.add_note_btn);
         recyclerView = findViewById(R.id.recyler_view);
@@ -44,8 +45,9 @@ public class MainActivity extends AppCompatActivity {
 
     void showMenu(){
         PopupMenu popupMenu  = new PopupMenu(MainActivity.this,menuBtn);
+        popupMenu.getMenu().add("Ustawienia");
+        popupMenu.getMenu().add("O Aplikacji");
         popupMenu.getMenu().add("Wyloguj się");
-        popupMenu.getMenu().add("O nas");
         popupMenu.show();
         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
@@ -56,8 +58,12 @@ public class MainActivity extends AppCompatActivity {
                     finish();
                     return true;
                 }
-                if (menuItem.getTitle() == "O nas"){
+                if (menuItem.getTitle() == "O Aplikacji"){
                     startActivity(new Intent(MainActivity.this, AboutUs.class));
+                    return true;
+                }
+                if (menuItem.getTitle() == "Ustawienia"){
+                    startActivity(new Intent(MainActivity.this, Setings.class));
                     return true;
                 }
                 return false;

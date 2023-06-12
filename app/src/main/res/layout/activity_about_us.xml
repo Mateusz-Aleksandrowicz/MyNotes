@@ -2,7 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="@color/my_primary"
+    android:background="@color/background"
     >
 
 
@@ -14,7 +14,7 @@
         android:gravity="center"
         android:textStyle="bold"
         android:layout_marginBottom="30dp"
-        android:textColor="@android:color/white"
+        android:textColor="@color/textSecondary"
         android:text="MyNotes"
         />
 
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="@android:color/white"
+        android:textColor="@color/textSecondary"
         android:layout_marginBottom="40dp"
         android:gravity="center"
         android:layout_below="@id/appName"
@@ -37,7 +37,7 @@
         android:layout_below="@id/versionTextView"
         android:textSize="20sp"
         android:gravity="center"
-        android:textColor="@android:color/white"
+        android:textColor="@color/textSecondary"
         android:layout_marginBottom="16dp"
         android:text="Jak działa? I czym jest MyNotes?" />
 

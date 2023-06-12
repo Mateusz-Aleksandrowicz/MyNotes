@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/my_primary"
+    android:background="@color/background"
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".SplashActivity">
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="@string/app_name"
         android:textSize="32sp"
-        android:textColor="@color/white"
+        android:textColor="@color/text"
         android:textStyle="bold"
         android:gravity="center"
         />
@@ -22,7 +22,7 @@
     <ProgressBar
         android:layout_width="24sp"
         android:layout_height="24sp"
-        android:indeterminateTint="@color/white"
+        android:indeterminateTint="@color/text"
         android:layout_margin="16dp"
         />
 
@@ -32,7 +32,7 @@
         android:gravity="center"
         android:text="Created By:"
         android:layout_marginTop="40dp"
-        android:textColor="@color/white"
+        android:textColor="@color/text"
         android:textSize="16sp" />
 
     <TextView
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Mateusz Aleksandrowicz"
-        android:textColor="@color/white"
+        android:textColor="@color/text"
         android:textSize="16sp" />
 
     <TextView
@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Joanna Kołdras"
-        android:textColor="@color/white"
+        android:textColor="@color/text"
         android:textSize="16sp" />
 
 

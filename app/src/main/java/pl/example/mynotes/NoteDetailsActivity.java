@@ -29,6 +29,7 @@ public class NoteDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_note_details);
+        getSupportActionBar().hide();
 
         titleEditText = findViewById(R.id.notes_title_text);
         contentEditText = findViewById(R.id.notes_content_text);

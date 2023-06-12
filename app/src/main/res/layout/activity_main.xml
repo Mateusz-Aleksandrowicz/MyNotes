@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/my_primary"
+    android:background="@color/background"
     android:padding="16dp"
     tools:context=".MainActivity">
     <RelativeLayout
@@ -17,7 +17,7 @@
             android:id="@+id/page_title"
             android:text="Notatki"
             android:textSize="32sp"
-            android:textColor="@color/white"
+            android:textColor="@color/textSecondary"
             android:textStyle="bold"/>
 
         <ImageButton
@@ -27,7 +27,7 @@
             android:src="@drawable/baseline_menu_24"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            app:tint="@color/white"
+            app:tint="@color/textSecondary"
             android:background="?attr/selectableItemBackgroundBorderless"
             />
 
@@ -44,7 +44,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/add_note_btn"
-        android:backgroundTint="@color/white"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:src="@drawable/baseline_add_24"
