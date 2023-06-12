@@ -1,11 +1,16 @@
-Aplikacja uzytkowa MyNotes
+Aplikacja użytkowa → MyNotes
 
-- Zostalo utworzone konto do testowania aplikacji:
-    login: testytest359@gmail.com
-    password: test12345
+  Dane logowania do przetestowania aplikacji: 
 
-- Aplikacja posiada splashScreen przedstawiajacy kto wykonal projekt
-- Aplikacja umozliwia dodawania usuwanie edycje notatek, posiada proces rejestracji i logowania
-- Aplikacja posiada walidacje danych oraz pelna autoryzacje uzytkownika ( potweirdzenie przychodzi na mail, uzytkownik musi zweryfikowac email by mooc sie zalogowac)
-- Aplikacja jest polaczona z baza FireBase gdzie sa przetrzymywane wszystkie dane o uzytkownikach jak i o stworzonych notatkach
-- Aplikacja posiada menu w ktorego w sklad wchodzi aktualnie tylko przycisk Logout (prace nad dalszymi funkcjonalnoscami nadal trwaja np DarkMode)
+  login: testytest359@gmail.com 
+
+  hasło: test12345
+
+1) Aplikacja posiada atrakcyjny SplashScreen, który przedstawia twórców projektu.
+2) Użytkownik może swobodnie dodawać, usuwać i edytować notatki. 
+4) Aplikacja oferuje wygodny proces rejestracji i logowania.
+5) Dla zapewnienia bezpieczeństwa danych, aplikacja przeprowadza walidację wprowadzanych informacji oraz pełną autoryzację użytkownika → potwierdzenie rejestracji jest wysyłane na adres e-mail, a użytkownik musi zweryfikować swój e-mail, aby móc zalogować się do aplikacji.
+6) Aplikacja jest połączona z bazą danych Firebase, w której przechowywane są wszystkie dane użytkowników oraz stworzone notatki.
+7) W menu aplikacji znajdują się różne opcje, takie jak: Ustawienia (w tym tryb ciemny - DarkMode), O Aplikacji (opis funkcjonalności) oraz Wylogowanie, które zapewniają użytkownikowi pełną kontrolę i wygodę korzystania z aplikacji.
+
+Dzięki tym funkcjonalnościom aplikacja MyNotes zapewnia wygodne i bezpieczne zarządzanie notatkami, spełniając oczekiwania użytkowników w zakresie przechowywania i edycji informacji.
