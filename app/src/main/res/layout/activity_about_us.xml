@@ -38,13 +38,67 @@
         android:textSize="20sp"
         android:gravity="center"
         android:textColor="@color/textSecondary"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="20dp"
         android:text="Jak działa? I czym jest MyNotes?" />
 
-<!--  Tutaj dodajesz kolejne "text view'sy" z opisem aplikacji w necie napewno znajdziesz jak to ladnie
-  wystylowac zeby to jakos wygladalo :D
-     Ewentualnie mozesz dodac tylko textView i dac mu id i w klasie AboutUs
-     mozesz dodac odwolanie i tam dopiero dodac tekst poczytaj na necie o tym bo tego duzo jest
- -->
+    <TextView
+        android:id="@+id/descriptionTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionTextView"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/textSecondary"
+        android:layout_marginBottom="20dp"
+        android:maxLines="20"
+        android:textStyle="bold"
+        android:text="Działanie aplikacji: \n" />
 
+    <TextView
+        android:id="@+id/descriptionTextView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionTextView2"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:textColor="@color/textSecondary"
+        android:layout_marginBottom="16dp"
+        android:text="
+    1. Dodawanie, usuwanie i edycja notatek oraz proces rejestracji i logowania."/>
+
+    <TextView
+        android:id="@+id/descriptionTextView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionTextView3"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:textColor="@color/textSecondary"
+        android:text="
+    2. Walidacja danych i pełna autoryzacja użytkownika.\n
+"/>
+
+    <TextView
+        android:id="@+id/descriptionTextView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionTextView4"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:textColor="@color/textSecondary"
+        android:layout_marginBottom="16dp"
+        android:text="     3. Połączenie z bazą danych FireBase, przechowujacą informacje o użytkownikach i notatkach." />
+
+    <TextView
+        android:id="@+id/descriptionTextView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionTextView5"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:textColor="@color/textSecondary"
+        android:layout_marginBottom="16dp"
+        android:maxLines="20"
+        android:text="
+    4. Menu z opcjami: Ustawienia, O Aplikacji i Wylogowanie." />
 </RelativeLayout>
