@@ -1,10 +1,10 @@
 Aplikacja użytkowa → MyNotes
 
-Dane logowania do przetestowania aplikacji: 
+  Dane logowania do przetestowania aplikacji: 
 
-login: testytest359@gmail.com 
+  login: testytest359@gmail.com 
 
-hasło: test12345
+  hasło: test12345
 
 1) Aplikacja posiada atrakcyjny SplashScreen, który przedstawia twórców projektu.
 2) Użytkownik może swobodnie dodawać, usuwać i edytować notatki. 
